@@ -1,0 +1,534 @@
+@charset "utf-8";
+.hdd+td {color:#fff;}
+
+/* popup */
+.pop_wrap {position:relative; background:#fff}
+.pop_wrap.size01 {min-width:800px}
+.pop_wrap.size02 {min-width:1000px}
+.pop_wrap.size03 {min-width:1100px} /* 170621 추가 */
+.pop_wrap.size04 {min-width:900px} /* 170623 추가 */
+
+.pop_wrap .pop_head {padding:0 40px; background:#000; height:80px; font-size:30px; color:#fff; line-height:80px}
+.pop_wrap .pop_cont {padding:40px}
+.pop_wrap.size01 .pop_cont {width:720px}
+.pop_wrap.size02 .pop_cont {width:920px}
+.pop_wrap.size03 .pop_cont {width:1020px}
+.pop_wrap.size04 .pop_cont {width:820px}
+
+.pop_cont .mid_cnt {margin:0 0 18px; font-size:16px; color:#000; line-height:24px; text-align:center}
+.pop_cont .left_cnt {margin:0 0 38px; font-size:18px; color:#000; line-height:24px; text-align:left}
+
+.pop_wrap .title01 {margin-bottom:20px; font-size:26px; line-height:1;} /* 170621 수정 */
+
+.pop_wrap .btn_wrap {margin-top:40px}
+.pop_wrap .pop_cont .loading_area {position:absolute}
+.pop_wrap .txt02.lg01 {margin:0 0 35px}
+.pop_wrap table .txt_spaceL +.error_txt {display:block; margin:16px 0 0}
+
+.pop_wrap .dot_list02 li .txt_pghs{padding:6px 0 0; font-size:16px; color:#666}
+.pop_wrap .alert_box{margin-top:47px; text-align:center}
+.pop_wrap .alert_box .bTxt{line-height:40px; font-size:30px; color:#000}
+.pop_wrap .alert_box .sTxt{margin-top:17px; font-size:18px}
+.pop_wrap .alert_box.mg_s {margin-top:13px; margin-bottom:54px}
+
+.pop_wrap .pop_certification {text-align:center; font-size:0}
+.pop_wrap .pop_certification:after {clear:both; display:block; content:""}
+.pop_wrap .pop_certification .ctf_radio{display:inline-block; width:350px; height:447px; box-sizing:border-box; text-align:center; border:1px solid #ccc}
+.pop_wrap .pop_certification .ctf_radio:first-child {margin-left:0 }
+.pop_wrap .pop_certification .ctf_radio + .ctf_radio {margin-left:20px}
+.pop_wrap .pop_certification .ctf_radio .cont {display:block; height:100%; padding:271px 0 0; box-sizing:border-box; cursor:pointer; background-position:center 0}
+.pop_wrap .pop_certification .ctf_radio  input[type='radio']:focus + .cont:after {display:none}
+.pop_wrap .pop_certification .ctf_radio .cont strong {display:block; margin-bottom:11px; font-size:30px; font-family:"NotoSansThin"; letter-spacing:-0.05em} /* 170616 폰트 */
+.pop_wrap .pop_certification .ctf_radio .ctf_des {display:block; line-height:26px; font-size:16px; color:#666}
+.pop_wrap .pop_certification .ctf_radio.mobile {background:url('../images/ico/ico_certification02_phone.png') no-repeat center 70px}
+.pop_wrap .pop_certification .ctf_radio.ipin {background:url('../images/ico/ico_certification02_ipin.png') no-repeat center 70px}
+.pop_wrap .pop_certification .ctf_radio.note {background:url('../images/ico/ico_certification02_phone.png') no-repeat center 70px}
+.pop_wrap .pop_certification .ctf_radio.checked {border:2px solid #ff626f}
+.pop_wrap .pop_certification .ctf_radio.checked .cont {padding-top:270px; background-position:center -104px}
+.pop_wrap .pop_certification .ctf_radio.checked .cont:after {left:50%; margin-left:-13px}
+.pop_wrap .pop_certification .ctf_radio.checked.mobile {background:url('../images/ico/ico_certification02_phone_on.png') no-repeat center 69px}
+.pop_wrap .pop_certification .ctf_radio.checked.ipin {background:url('../images/ico/ico_certification02_ipin_on.png') no-repeat center 69px}
+.pop_wrap .pop_certification .ctf_radio.checked.note {background:url('../images/ico/ico_certification02_phone_on.png') no-repeat center 69px}
+
+.pop_wrap .pop_certification .ctf_ipin_tit { font-size: 18px; color: #666; line-height: 1.4; text-align: left; margin-bottom: 25px; }
+.pop_wrap .pop_certification .ctf_ipin_wrap { display: table; width: 100%; height: 200px; border: 1px solid #ff626f;background:url('../images/ico/ico_certification03_ipin.png') no-repeat 40px center }
+.pop_wrap .pop_certification .ctf_ipin_wrap>div { display: table-cell; width: 100%; padding-left: 190px;vertical-align: middle; text-align: left;line-height: 1; }
+.pop_wrap .pop_certification .ctf_ipin_wrap>div strong{display:block;font-size: 30px;font-family:"NotoSansThin";color:#000;margin-bottom: 18px;}
+.pop_wrap .pop_certification .ctf_ipin_wrap>div span{display:block;font-size: 16px;color:#666;}
+
+.pop_cont .title_wrap {position:relative} /* title + 우측 텍스트만 올 경우 */
+.pop_cont .title_wrap .txt_sup {position:absolute; bottom:9px; right:0; font-size:16px; color:#6c7688}
+.pop_cont .title_wrap .txt_sup.tit_sub {bottom:0;margin: 0;}
+
+/* select box */
+.pop_wrap .select_wrap .selected:after {background-image:url('../images/bg/bg_selectbox_arrow02_active.png')}
+.pop_wrap .select_wrap .selected.placeholder:after {background-image:url('../images/bg/bg_selectbox_arrow02.png')}
+.pop_wrap .select_wrap .selected.disabled:after {background-image:url('../images/bg/bg_selectbox_arrow_disable02.png')}
+.pop_wrap .select_wrap.open .selected:after {background-image:url('../images/bg/bg_selectbox_arrow02_active.png')}
+.pop_wrap .select_wrap.card_name .selected.placeholder:after, .pop_wrap .select_wrap.card_name .selected:after {content: none;}
+
+/* 내위치 설정 */
+.pstion_setting .inp_wrap {display:block; margin-top:10px}
+.pstion_setting .saved_pstion {padding-bottom:35px;border-bottom:1px solid #ccc;}
+.pstion_setting .txt_info {margin-top:15px;line-height:26px;font-size:16px;color:#666;}
+.pstion_setting .road_search {margin-top:40px;}
+.pstion_setting .road_search select {color:#999;}
+.pstion_setting .road_search .search_area {margin-top:10px;}
+.pstion_setting .road_search .selectB_wrap02 + .search_area.typeB {margin-left:0;}
+.pstion_setting .bas_ards {margin-top:40px;}
+.pstion_setting .adres_wrp {margin:40px 0;border:1px solid #ccc;font-size:16px;}
+.pstion_setting .adres_wrp .adres_tit {border-bottom:1px solid #ccc;background:#fcfcfc;}
+.pstion_setting .adres_wrp .adres_tit li {position:relative;float:left;padding:17px 0;text-align:center;}
+.pstion_setting .adres_wrp .adres_tit li:before {content:'';position:absolute;left:0;top:50%;width:1px;height:14px;margin-top:-7px;background:#ccc;}
+.pstion_setting .adres_wrp .adres_tit li:first-child:before {display:none;}
+.pstion_setting .adres_wrp .adres_tit .tit_zip {width:143px;}
+.pstion_setting .adres_wrp .adres_tit .tit_adrs {width:575px;}
+.pstion_setting .adres_wrp .adrs_list {overflow-y:auto;max-height:330px;padding:0 19px;}
+.pstion_setting .adres_wrp .adrs_list li {border-top:1px solid #ccc;}
+.pstion_setting .adres_wrp .adrs_list li:first-child {border-top:0;}
+.pstion_setting .adres_wrp .adrs_list li a {display:block;padding:19px 0 20px;}
+.pstion_setting .adres_wrp .adrs_list li a:after {content:'';display:block;clear:both;}
+.pstion_setting .adres_wrp .adrs_list li a:hover {background:#fcfcfc;}
+.pstion_setting .adres_wrp .adrs_list li a:hover .zip_code,
+.pstion_setting .adres_wrp .adrs_list li a:hover .adrs {color:#ff626f;}
+.pstion_setting .adres_wrp .adrs_list li .zip_code {display:inline-block;width:124px;text-align:center;vertical-align:middle;color:#000;}
+.pstion_setting .adres_wrp .adrs_list li .adrs_item {display:inline-block;width:526px;padding-left:10px;vertical-align:middle;}
+.pstion_setting .adres_wrp .adrs_list li .adrs_item span {display:block;color:#000;}
+.pstion_setting .adres_wrp .adrs_list li .adrs_item .adrs_dtil {margin-top:7px;color:#888;}
+
+/* 대리점 개설문의  */
+.agency_inquiry_pop {width:100% !important;} /*winpop*/
+.agency_inquiry_pop textarea.textarea02 { height:210px;} /* 170504 추가 */
+.agencypop_wrap { margin:40px 0;}
+.agencypop_wrap .agencypop_tit { font-size:20px;}
+.contact_box { position:relative; overflow:hidden; margin:20px 0 0 -40px; }
+.contact_box ul>li {float:left; overflow:hidden; width:33.3%;}
+.contact_box ul>li:first-child {width:33.4%;}
+.contact_box dl { padding:30px; margin-left:40px; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box; border:1px solid #ccc; border-top:none}
+.contact_box dl:first-child {border-top:1px solid #ccc}
+.contact_box dl:after { content:''; clear:both; display:block}
+.contact_box dt { margin-bottom:20px; font-size:18px;}
+.contact_box dd { font-size:16px;}
+.contact_box dd strong.name { padding-right:25px; background:url('../images/bu/bu_text_sort_line01.png') no-repeat 88% 6px}
+
+/*개통방법 안내  팝업 (공통틀) */
+.opening_help {padding:39px 37px;border:1px solid #ccc; background:#fff;}
+.opening_help .titlebox {display:table; margin:0; padding: 0 0 38px; width:100%; height:75px; border-bottom:1px solid #ccc}
+.opening_help .titlebox .tit {display:table-cell; padding:0 0 0 65px; font-size:30px; color:#000; line-height:34px; vertical-align:middle; font-family:"NotoSansThin"; letter-spacing:-0.05em} /* 170616 폰트 */
+.opening_help .help_step {overflow:hidden; padding:38px 0 0}
+.opening_help .help_step:after{content:''; clear:both; display:block}
+.opening_help .help_step ul {margin:-58px 0 0 -42px}
+.opening_help .help_step li {position:relative; float:left; margin:58px 0 0 42px ; width:200px}
+.opening_help .help_step li.small {width:160px}
+.opening_help .help_step .box {padding:75px 0 0;}
+.opening_help .help_step .box .step_tit {display:block; margin:0 0 18px; font-size:20px; color:#000; line-height:24px}
+.opening_help .help_step .box .txt {font-size:14px; color:#666; line-height:22px}
+.opening_help .help_step li:before {content:''; clear:both; position:absolute; top:77px; left:-50px; display:block; width:10px; height:19px;  background:url('../images/bg/bg_process_arrow.png') no-repeat center right}
+.dscbox {margin:38px 0 0; padding:18px 10px 20px; background:#fcfcfc; border:1px solid #ebebeb	; font-size:16px; color:#000; line-height:22px; text-align:center}
+.dscbox.space {padding:40px;}
+
+/* LTE폰 개통방법 안내 -   재정의 */
+.opening_help.lte_phone .titlebox .tit {background:url('../images/ico/ico_openingHelp_img01.gif') no-repeat top left}
+.opening_help.lte_phone .step01 .box {background:url('../images/ico/ico_openingHelp_img02.gif') no-repeat 50px top;}
+.opening_help.lte_phone .step02 .box {background:url('../images/ico/ico_openingHelp_img03.gif') no-repeat 28px top;}
+.opening_help.lte_phone .step03 .box {background:url('../images/ico/ico_openingHelp_img04.gif') no-repeat 30px top;}
+.opening_help.lte_phone .step04 .box {background:url('../images/ico/ico_openingHelp_img05.gif') no-repeat 50px top;}
+.opening_help.lte_phone .step05 .box {background:url('../images/ico/ico_openingHelp_img06.gif') no-repeat 28px top;}
+
+/* 2G 피처폰 개통방법 안내 - 재정의 */
+.opening_help.feature_phone {}
+.opening_help.feature_phone .titlebox .tit {background:url('../images/ico/ico_openingHelp2g_img01.gif') no-repeat top left}
+.opening_help.feature_phone .help_step ul {margin:-58px 0 0 -70px}
+.opening_help.feature_phone .help_step li {margin:58px 0 0 70px}
+.opening_help.feature_phone .step01 {width:175px;}
+.opening_help.feature_phone .step02 {width:219px}
+.opening_help.feature_phone .step03 {width:110px}
+/* .opening_help.feature_phone .step03:before {display:none} */
+.opening_help.feature_phone .step01 .box {background:url('../images/ico/ico_openingHelp2g_img02.gif') no-repeat 29px top;}
+.opening_help.feature_phone .step02 .box {background:url('../images/ico/ico_openingHelp2g_img03.gif') no-repeat 45px top;}
+.opening_help.feature_phone .step03 .box {background:url('../images/ico/ico_openingHelp2g_img02.gif') no-repeat 29px top;}
+
+/* 요금 상세 내역 */
+.pop_wrap .charge_detail {padding:25px 0 20px;border:none;}
+
+/* 요금상세내역 */
+.pop_wrap .charge_detail {padding:25px 0 20px;border:none;}
+.pop_wrap .ask_pay {position:relative; top:0; left:0; margin-bottom:14px; padding-bottom:34px; text-align:left; background:url('../images/bg/bg_dotted_black.png') repeat-x 0 100%}
+.pop_wrap .particulars {font-size:18px; color:#000}
+.pop_wrap .use_period {margin-bottom:6px; color:#666}
+.pop_wrap .use_charge {position:absolute; top:-12px; right:0; font-size:30px; color:#000}
+.pop_wrap .use_charge strong {font-family:'NotoSansBold'; font-size:60px; color:#ff626f}
+
+/* 우편번호 찾기 UMB_WEB_Charge_012 */
+.info_msg {margin:18px 0 0; font-size:16px; color:#666}
+
+
+/* 휴대폰 > 요금제 선택 팝업 */
+.pricebox_wrap {z-index:5; overflow:hidden; padding:0; margin:-10px 0 29px -20px}
+.pricebox_wrap:after {content:''; clear:both; display:block}
+.pricebox_wrap .prbox {overflow:hidden ;position:relative; float:left; margin:10px 0 0 20px; padding:42px 10px 28px; width:215px; height:215px; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box; background:url('../images/bg/bg_priceselect_box.png') no-repeat left top; text-align:center}
+.pricebox_wrap .prbox .view_cont {z-index:1} /* 170621 추가*/
+.pricebox_wrap .prbox .name {display:block; height:75px; font-size:24px; font-family:'NotoSansBold'; color:#333; line-height:28px}
+.pricebox_wrap .prbox .txt {display:inline-block; margin:0 auto; padding:0 20px; height:28px; font-size:16px; color:#9b9b9b; border:2px solid #d0d0d0;  -moz-border-radius:15px; -webkit-border-radius:15px; border-radius:15px; line-height:28px}
+.pricebox_wrap .prbox .price {display:block; margin:12px 0 0; font-size:16px; color:#333; line-height:20px}
+.pricebox_wrap .prbox .hid_box {display:none; text-align:left}
+
+.pricebox_wrap .prbox:hover, .pricebox_wrap .prbox:focus {background:url('../images/bg/bg_priceselect_onbox.png') no-repeat left top}
+.pricebox_wrap .prbox:hover .hid_box, .pricebox_wrap .prbox:focus .hid_box {z-index:10; position:absolute; top:0; left:0; display:block; width:100%; height:100%; padding:48px 25px 0; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box;}
+.pricebox_wrap .prbox:hover .view_cont, .pricebox_wrap .prbox:focus .view_cont {display:none}
+
+.pricebox_wrap .prbox .gubun:first-child {margin-top:0}
+.pricebox_wrap .prbox .gubun {display:block; padding:0 0 0 34px; margin:20px 0 0; height:28px; font-size:16px; color:#666; line-height:28px; text-align:left; vertical-align:middle} /* 170626 수정 */
+.pricebox_wrap .prbox .gubun:after {content:''; clear:both; display:block}
+.pricebox_wrap .prbox .gubun.data {background:url('../images/ico/ico_sum_data.png') no-repeat left center}
+.pricebox_wrap .prbox .gubun.call {background:url('../images/ico/ico_sum_call.png') no-repeat left center}
+.pricebox_wrap .prbox .gubun.msg {background:url('../images/ico/ico_sum_msg.png') no-repeat left center}
+.pricebox_wrap .prbox .gubun .amt {float:right; display:inline-block; padding:0; font-size:16px; font-family:'NotoSansBold'; color:#000; text-align: right; }
+.pricebox_wrap .prbox .gubun.call .amt {line-height: 1.3;margin-top: 4px;}
+
+.pricebox_wrap .prbox.on .select_msk {z-index:15; position:absolute; top:0; left:0; display:block; width:100%; height:100%}
+.pricebox_wrap .prbox.on .select_msk:before {content:''; z-index:17;  position:absolute; top:0; left:0; display:block; width:100%; height:100%; background:url('../images/ico/ico_priceselect_chk.png') no-repeat left top} /* 170626 수정 */
+.pricebox_wrap .prbox.on:hover .select_msk:before {display:none}
+/* .pricebox_wrap .prbox.on:before {content:'';  z-index:15; position:absolute; top:0; left:0; width:100%; height:100%; background:url('/static/mhp/images/bg/bg_priceselect_mask.png') repeat left top}
+.pricebox_wrap .prbox.on:after {content:''; z-index:17;  position:absolute; top:54px; left:54px; display:block; width:108px; height:108px;  background:url('/static/mhp/images/ico/ico_priceselect_chk.png') no-repeat left top}
+ */
+
+/* 로딩 박스 */
+
+.loding_box {padding:58px 10px; text-align:center; background:#fcfcfc}
+.loding_box .loding {display:block; width:61px; height:61px; margin:0 auto 20px}
+.loding_box .msg_txt {margin-bottom:13px; color:#000; font-size:30px; line-height:1.3}
+.loding_box .msg_txtS {font-size:18px; color:#666}
+
+/* 요금제 부가서비스 신청 팝업 */
+.rate_addsvc {margin:-10px 0 0 -9px}
+.rate_addsvc:after {content:''; clear:both; display:block}
+.rate_addsvc .prd_box {position:relative; display:table; float:left; margin:10px 0 0 9px; width:172px; height:98px; -moz-box-sizing:border-box; -webkti-box-sizing:border-box; box-sizing:border-box}
+.rate_addsvc .prd_box:after {content:''; clear:both; display:block}
+.rate_addsvc .prd_box input[type="radio"] {overflow:hidden; position:absolute; top:-9999px; left:-9999px; margin:0; padding:0; width:1px; height:1px; }
+.rate_addsvc .prd_box .cont {cursor:pointer; display:table-cell; padding:0 26px 0; width:100%; -moz-box-sizing:border-box; -webkti-box-sizing:border-box; box-sizing:border-box; vertical-align:middle; border:1px solid #ccc}
+.rate_addsvc .prd_box .cont .gname {display:block; font-size:18px; color:#666; line-height:22px; text-align:center}
+.rate_addsvc .prd_box .cont .cash {margin:4px 0 0;  display:block; font-size:18px; color:#000; text-align:center}
+.rate_addsvc .prd_box .cont .cash em {font-family:'NotoSansBold'; color:#ff626f}
+.rate_addsvc .prd_box.on .cont, .rate_addsvc .prd_box.checked .cont {padding:0 26px 0; border:2px solid #ff626f;}
+.rate_addsvc .prd_box.on .cont, .rate_addsvc .prd_box.checked .cont:after {display:none}
+
+/* 요금제 - 전체 요금제 한눈에 보기 팝업 */
+.srcoll_wrap {overflow-y:scroll}
+.srcoll_wrap.price_tbl {padding:0 25px 0 0; height:650px }
+.tbl_list.filter_type {}
+.tbl_list.range thead th {padding:17px 0; border-top:none !important; font-size:18px; color:#666; line-height:22px}
+.tbl_list.range thead tr + tr th {padding-top:7px}
+.tbl_list.range thead .cols {padding:16px 0 0}
+.tbl_list.range thead .rngbtn_wrap {overflow:hidden; display:inline-block; margin:6px auto 0;}
+.hdd+td {color:#fff;}
+
+/* popup */
+.pop_wrap {position:relative; background:#fff}
+.pop_wrap.size01 {width:800px}
+.pop_wrap.size02 {width:1000px}
+.pop_wrap.size03 {width:1100px} /* 170621 추가 */
+.pop_wrap.size04 {width:900px} /* 170623 추가 */
+.pop_wrap.winpop {width:100% !important;}
+
+.pop_wrap .pop_head {padding:0 40px; background:#000; height:80px; font-size:30px; color:#fff; line-height:80px}
+.pop_wrap .pop_cont {padding:40px}
+.pop_cont .mid_cnt {margin:0 0 18px; font-size:16px; color:#000; line-height:24px; text-align:center}
+.pop_cont .left_cnt {margin:0 0 38px; font-size:18px; color:#000; line-height:24px; text-align:left}
+
+.pop_wrap .title01 {margin-bottom:20px; font-size:26px; line-height:1;} /* 170621 수정 */
+
+.pop_wrap .btn_wrap {margin-top:40px}
+.pop_wrap .pop_cont .loading_area {position:absolute}
+.pop_wrap .txt02.lg01 {margin:0 0 35px}
+.pop_wrap table .txt_spaceL +.error_txt {display:block; margin:16px 0 0}
+
+.pop_wrap .dot_list02 li .txt_pghs{padding:6px 0 0; font-size:16px; color:#666}
+.pop_wrap .alert_box{margin-top:47px; text-align:center}
+.pop_wrap .alert_box .bTxt{line-height:40px; font-size:30px; color:#000}
+.pop_wrap .alert_box .sTxt{margin-top:17px; font-size:18px}
+.pop_wrap .alert_box.mg_s {margin-top:13px; margin-bottom:54px}
+
+.pop_wrap .pop_certification {text-align:center; font-size:0}
+.pop_wrap .pop_certification:after {clear:both; display:block; content:""}
+.pop_wrap .pop_certification .ctf_radio{display:inline-block; width:350px; height:447px; box-sizing:border-box; text-align:center; border:1px solid #ccc}
+.pop_wrap .pop_certification .ctf_radio:first-child {margin-left:0 }
+.pop_wrap .pop_certification .ctf_radio + .ctf_radio {margin-left:20px}
+.pop_wrap .pop_certification .ctf_radio .cont {display:block; height:100%; padding:271px 0 0; box-sizing:border-box; cursor:pointer; background-position:center 0}
+.pop_wrap .pop_certification .ctf_radio  input[type='radio']:focus + .cont:after {display:none}
+.pop_wrap .pop_certification .ctf_radio .cont strong {display:block; margin-bottom:11px; font-size:30px; font-family:"NotoSansThin"; letter-spacing:-0.05em} /* 170616 폰트 */
+.pop_wrap .pop_certification .ctf_radio .ctf_des {display:block; line-height:26px; font-size:16px; color:#666}
+.pop_wrap .pop_certification .ctf_radio.mobile {background:url('../images/ico/ico_certification02_phone.png') no-repeat center 70px}
+.pop_wrap .pop_certification .ctf_radio.ipin {background:url('../images/ico/ico_certification02_ipin.png') no-repeat center 70px}
+.pop_wrap .pop_certification .ctf_radio.note {background:url('../images/ico/ico_certification02_phone.png') no-repeat center 70px}
+.pop_wrap .pop_certification .ctf_radio.checked {border:2px solid #ff626f}
+.pop_wrap .pop_certification .ctf_radio.checked .cont {padding-top:270px; background-position:center -104px}
+.pop_wrap .pop_certification .ctf_radio.checked .cont:after {left:50%; margin-left:-13px}
+.pop_wrap .pop_certification .ctf_radio.checked.mobile {background:url('../images/ico/ico_certification02_phone_on.png') no-repeat center 69px}
+.pop_wrap .pop_certification .ctf_radio.checked.ipin {background:url('../images/ico/ico_certification02_ipin_on.png') no-repeat center 69px}
+.pop_wrap .pop_certification .ctf_radio.checked.note {background:url('../images/ico/ico_certification02_phone_on.png') no-repeat center 69px}
+
+.pop_cont .title_wrap {position:relative} /* title + 우측 텍스트만 올 경우 */
+.pop_cont .title_wrap .txt_sup {position:absolute; bottom:9px; right:0; font-size:16px; color:#6c7688}
+
+/* select box */
+.pop_wrap .select_wrap .selected:after {background-image:url('../images/bg/bg_selectbox_arrow02_active.png')}
+.pop_wrap .select_wrap .selected.placeholder:after {background-image:url('../images/bg/bg_selectbox_arrow02.png')}
+.pop_wrap .select_wrap .selected.disabled:after {background-image:url('../images/bg/bg_selectbox_arrow_disable02.png')}
+.pop_wrap .select_wrap.open .selected:after {background-image:url('../images/bg/bg_selectbox_arrow02_active.png')}
+
+/* 내위치 설정 */
+.pstion_setting .inp_wrap {display:block; margin-top:10px}
+.pstion_setting .saved_pstion {padding-bottom:35px;border-bottom:1px solid #ccc;}
+.pstion_setting .txt_info {margin-top:15px;line-height:26px;font-size:16px;color:#666;}
+.pstion_setting .road_search {margin-top:40px;}
+.pstion_setting .road_search select {color:#999;}
+.pstion_setting .road_search .search_area {margin-top:10px;}
+.pstion_setting .road_search .selectB_wrap02 + .search_area.typeB {margin-left:0;}
+.pstion_setting .bas_ards {margin-top:40px;}
+.pstion_setting .adres_wrp {margin:40px 0;border:1px solid #ccc;font-size:16px;}
+.pstion_setting .adres_wrp .adres_tit {border-bottom:1px solid #ccc;background:#fcfcfc;}
+.pstion_setting .adres_wrp .adres_tit li {position:relative;float:left;padding:17px 0;text-align:center;}
+.pstion_setting .adres_wrp .adres_tit li:before {content:'';position:absolute;left:0;top:50%;width:1px;height:14px;margin-top:-7px;background:#ccc;}
+.pstion_setting .adres_wrp .adres_tit li:first-child:before {display:none;}
+.pstion_setting .adres_wrp .adres_tit .tit_zip {width:143px;}
+.pstion_setting .adres_wrp .adres_tit .tit_adrs {width:575px;}
+.pstion_setting .adres_wrp .adrs_list {overflow-y:auto;max-height:330px;padding:0 19px;}
+.pstion_setting .adres_wrp .adrs_list li {border-top:1px solid #ccc;}
+.pstion_setting .adres_wrp .adrs_list li:first-child {border-top:0;}
+.pstion_setting .adres_wrp .adrs_list li a {display:block;padding:19px 0 20px;}
+.pstion_setting .adres_wrp .adrs_list li a:after {content:'';display:block;clear:both;}
+.pstion_setting .adres_wrp .adrs_list li a:hover {background:#fcfcfc;}
+.pstion_setting .adres_wrp .adrs_list li a:hover .zip_code,
+.pstion_setting .adres_wrp .adrs_list li a:hover .adrs {color:#ff626f;}
+.pstion_setting .adres_wrp .adrs_list li .zip_code {display:inline-block;width:124px;text-align:center;vertical-align:middle;color:#000;}
+.pstion_setting .adres_wrp .adrs_list li .adrs_item {display:inline-block;width:526px;padding-left:10px;vertical-align:middle;}
+.pstion_setting .adres_wrp .adrs_list li .adrs_item span {display:block;color:#000;}
+.pstion_setting .adres_wrp .adrs_list li .adrs_item .adrs_dtil {margin-top:7px;color:#888;}
+
+/* 대리점 개설문의  */
+.agency_inquiry_pop {width:100% !important;} /*winpop*/
+.agency_inquiry_pop textarea.textarea02 { height:210px;} /* 170504 추가 */
+.agencypop_wrap { margin:40px 0;}
+.agencypop_wrap .agencypop_tit { font-size:20px;}
+.contact_box { position:relative; overflow:hidden; margin:20px 0 0 -40px; }
+.contact_box ul>li {float:left; overflow:hidden; width:33.3%;}
+.contact_box ul>li:first-child {width:33.4%;}
+.contact_box dl { padding:30px; margin-left:40px; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box; border:1px solid #ccc; border-top:none}
+.contact_box dl:first-child {border-top:1px solid #ccc}
+.contact_box dl:after { content:''; clear:both; display:block}
+.contact_box dt { margin-bottom:20px; font-size:18px;}
+.contact_box dd { font-size:16px;}
+.contact_box dd strong.name { padding-right:25px; background:url('../images/bu/bu_text_sort_line01.png') no-repeat 88% 6px}
+
+/*개통방법 안내  팝업 (공통틀) */
+.opening_help {padding:39px 37px;border:1px solid #ccc; background:#fff;}
+.opening_help .titlebox {display:table; margin:0; padding: 0 0 38px; width:100%; height:75px; border-bottom:1px solid #ccc}
+.opening_help .titlebox .tit {display:table-cell; padding:0 0 0 65px; font-size:30px; color:#000; line-height:34px; vertical-align:middle; font-family:"NotoSansThin"; letter-spacing:-0.05em} /* 170616 폰트 */
+.opening_help .help_step {overflow:hidden; padding:38px 0 0}
+.opening_help .help_step:after{content:''; clear:both; display:block}
+.opening_help .help_step ul {margin:-58px 0 0 -42px}
+.opening_help .help_step li {position:relative; float:left; margin:58px 0 0 42px ; width:200px}
+.opening_help .help_step li.small {width:160px}
+.opening_help .help_step .box {padding:75px 0 0;}
+.opening_help .help_step .box .step_tit {display:block; margin:0 0 18px; font-size:20px; color:#000; line-height:24px}
+.opening_help .help_step .box .txt {font-size:14px; color:#666; line-height:22px}
+.opening_help .help_step li:before {content:''; clear:both; position:absolute; top:77px; left:-50px; display:block; width:10px; height:19px;  background:url('../images/bg/bg_process_arrow.png') no-repeat center right}
+.dscbox {margin:38px 0 0; padding:18px 10px 20px; background:#fcfcfc; border:1px solid #ebebeb	; font-size:16px; color:#000; line-height:22px; text-align:center}
+
+/* LTE폰 개통방법 안내 -   재정의 */
+.opening_help.lte_phone .titlebox .tit {background:url('../images/ico/ico_openingHelp_img01.gif') no-repeat top left}
+.opening_help.lte_phone .step01 .box {background:url('../images/ico/ico_openingHelp_img02.gif') no-repeat 50px top;}
+.opening_help.lte_phone .step02 .box {background:url('../images/ico/ico_openingHelp_img03.gif') no-repeat 28px top;}
+.opening_help.lte_phone .step03 .box {background:url('../images/ico/ico_openingHelp_img04.gif') no-repeat 30px top;}
+.opening_help.lte_phone .step04 .box {background:url('../images/ico/ico_openingHelp_img05.gif') no-repeat 50px top;}
+.opening_help.lte_phone .step05 .box {background:url('../images/ico/ico_openingHelp_img06.gif') no-repeat 28px top;}
+
+/* 2G 피처폰 개통방법 안내 - 재정의 */
+.opening_help.feature_phone {}
+.opening_help.feature_phone .titlebox .tit {background:url('../images/ico/ico_openingHelp2g_img01.gif') no-repeat top left}
+.opening_help.feature_phone .help_step ul {margin:-58px 0 0 -70px}
+.opening_help.feature_phone .help_step li {margin:58px 0 0 70px}
+.opening_help.feature_phone .step01 {width:175px;}
+.opening_help.feature_phone .step02 {width:219px}
+.opening_help.feature_phone .step03 {width:110px}
+/* .opening_help.feature_phone .step03:before {display:none} */
+.opening_help.feature_phone .step01 .box {background:url('../images/ico/ico_openingHelp2g_img02.gif') no-repeat 29px top;}
+.opening_help.feature_phone .step02 .box {background:url('../images/ico/ico_openingHelp2g_img03.gif') no-repeat 45px top;}
+.opening_help.feature_phone .step03 .box {background:url('../images/ico/ico_openingHelp2g_img02.gif') no-repeat 29px top;}
+
+/* 요금 상세 내역 */
+.pop_wrap .charge_detail {padding:25px 0 20px;border:none;}
+
+/* 요금상세내역 */
+.pop_wrap .charge_detail {padding:25px 0 20px;border:none;}
+.pop_wrap .ask_pay {position:relative; top:0; left:0; margin-bottom:14px; padding-bottom:34px; text-align:left; background:url('../images/bg/bg_dotted_black.png') repeat-x 0 100%}
+.pop_wrap .particulars {font-size:18px; color:#000}
+.pop_wrap .use_period {margin-bottom:6px; color:#666}
+.pop_wrap .use_charge {position:absolute; top:-12px; right:0; font-size:30px; color:#000}
+.pop_wrap .use_charge strong {font-family:'NotoSansBold'; font-size:60px; color:#ff626f}
+
+/* 우편번호 찾기 UMB_WEB_Charge_012 */
+.info_msg {margin:18px 0 0; font-size:16px; color:#666}
+
+
+/* 휴대폰 > 요금제 선택 팝업 */
+.pricebox_wrap {z-index:5; overflow:hidden; padding:0; margin:-10px 0 29px -20px}
+.pricebox_wrap:after {content:''; clear:both; display:block}
+/* <<<<<<< .mine */
+.pricebox_wrap .prbox {overflow:hidden ;position:relative; float:left; margin:10px 0 0 20px; padding:42px 10px 28px; width:215px; height:215px; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box; text-align:center; background:url('../images/bg/bg_priceselect_box.png') no-repeat left top} /* 170626 수정 */
+.pricebox_wrap .prbox:hover .select_msk {display:none}
+/* ======= */
+.pricebox_wrap .prbox {overflow:hidden ;position:relative; float:left; margin:10px 0 0 20px; padding:42px 10px 28px; width:215px; height:215px; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box; background:url('../images/bg/bg_priceselect_box.png') no-repeat left top; text-align:center}
+/* >>>>>>> .r23566 */
+.pricebox_wrap .prbox .view_cont {z-index:1} /* 170621 추가*/
+.pricebox_wrap .prbox .name {display:block; height:75px; font-size:24px; font-family:'NotoSansBold'; color:#333; line-height:28px}
+.pricebox_wrap .prbox .txt {display:inline-block; margin:0 auto; padding:0 20px; height:28px; font-size:16px; color:#9b9b9b; border:2px solid #d0d0d0;  -moz-border-radius:15px; -webkit-border-radius:15px; border-radius:15px; line-height:28px}
+.pricebox_wrap .prbox .price {display:block; margin:12px 0 0; font-size:16px; color:#333; line-height:20px}
+.pricebox_wrap .prbox .hid_box {display:none; text-align:left}
+
+.pricebox_wrap .prbox:hover, .pricebox_wrap .prbox:focus {background:url('../images/bg/bg_priceselect_onbox.png') no-repeat left top}
+.pricebox_wrap .prbox:hover .hid_box, .pricebox_wrap .prbox:focus .hid_box {z-index:10; position:absolute; top:0; left:0; display:block; width:100%; height:100%; padding:48px 25px 0; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box;}
+.pricebox_wrap .prbox:hover .view_cont, .pricebox_wrap .prbox:focus .view_cont {display:none}
+
+.pricebox_wrap .prbox .gubun:first-child {margin-top:0}
+.pricebox_wrap .prbox .gubun {display:block; padding:0 0 0 34px; margin:20px 0 0; height:28px; font-size:16px; color:#666; line-height:28px; text-align:left; vertical-align:middle} /* 170626 수정 */
+.pricebox_wrap .prbox .gubun:after {content:''; clear:both; display:block}
+.pricebox_wrap .prbox .gubun.data {background:url('../images/ico/ico_sum_data.png') no-repeat left center}
+.pricebox_wrap .prbox .gubun.call {background:url('../images/ico/ico_sum_call.png') no-repeat left center}
+.pricebox_wrap .prbox .gubun.msg {background:url('../images/ico/ico_sum_msg.png') no-repeat left center}
+.pricebox_wrap .prbox .gubun .amt {float:right; display:inline-block; padding:0; font-size:16px; font-family:'NotoSansBold'; color:#000;} /* 170626 수정 */
+
+.pricebox_wrap .prbox.on .select_msk {z-index:15; position:absolute; top:0; left:0; display:block; width:100%; height:100%;}
+.pricebox_wrap .prbox.on .select_msk:before {content:''; z-index:17;  position:absolute; top:0; left:0; display:block; width:215px; height:215px; background:url('../images/ico/ico_priceselect_chk.png') no-repeat center;} /* 170626 수정 */
+.pricebox_wrap .prbox.on:hover .select_msk:before {display:none}
+/* .pricebox_wrap .prbox.on:before {content:'';  z-index:15; position:absolute; top:0; left:0; width:100%; height:100%; background:url('/static/mhp/images/bg/bg_priceselect_mask.png') repeat left top}
+.pricebox_wrap .prbox.on:after {content:''; z-index:17;  position:absolute; top:54px; left:54px; display:block; width:108px; height:108px;  background:url('/static/mhp/images/ico/ico_priceselect_chk.png') no-repeat left top}
+ */
+
+/* 로딩 박스 */
+
+.loding_box {padding:58px 10px; text-align:center; background:#fcfcfc}
+.loding_box .loding {display:block; width:61px; height:61px; margin:0 auto 20px}
+.loding_box .msg_txt {margin-bottom:13px; color:#000; font-size:30px; line-height:1.3}
+.loding_box .msg_txtS {font-size:18px; color:#666}
+
+/* 요금제 부가서비스 신청 팝업 */
+.rate_addsvc {margin:-10px 0 0 -9px}
+.rate_addsvc:after {content:''; clear:both; display:block}
+.rate_addsvc .prd_box {position:relative; display:table; float:left; margin:10px 0 0 9px; width:172px; height:98px; -moz-box-sizing:border-box; -webkti-box-sizing:border-box; box-sizing:border-box}
+.rate_addsvc .prd_box:after {content:''; clear:both; display:block}
+.rate_addsvc .prd_box input[type="radio"] {overflow:hidden; position:absolute; top:-9999px; left:-9999px; margin:0; padding:0; width:1px; height:1px; }
+.rate_addsvc .prd_box .cont {cursor:pointer; display:table-cell; padding:0 26px 0; width:100%; -moz-box-sizing:border-box; -webkti-box-sizing:border-box; box-sizing:border-box; vertical-align:middle; border:1px solid #ccc}
+.rate_addsvc .prd_box .cont .gname {display:block; font-size:18px; color:#666; line-height:22px; text-align:center}
+.rate_addsvc .prd_box .cont .cash {margin:4px 0 0;  display:block; font-size:18px; color:#000; text-align:center}
+.rate_addsvc .prd_box .cont .cash em {font-family:'NotoSansBold'; color:#ff626f}
+.rate_addsvc .prd_box.on .cont, .rate_addsvc .prd_box.checked .cont {padding:0 26px 0; border:2px solid #ff626f;}
+.rate_addsvc .prd_box.on .cont, .rate_addsvc .prd_box.checked .cont:after {display:none}
+
+/* 요금제 - 전체 요금제 한눈에 보기 팝업 */
+.srcoll_wrap {overflow-y:scroll}
+.srcoll_wrap.price_tbl {padding:0 25px 0 0; height:650px }
+.srcoll_wrap.price_tbl2 {position:absolute; padding:0 25px 0 0; height:calc(100% - 253px) }
+.srcoll_wrap.price_tbl2 .tbl_list.range del {display:block;}
+.tbl_list.filter_type {}
+.tbl_list.range thead th {padding:17px 0; border-top:none !important; font-size:18px; color:#666; line-height:22px}
+.tbl_list.range thead tr + tr th {padding-top:7px}
+.tbl_list.range thead .cols {padding:16px 0 0}
+.tbl_list.range thead .rngbtn_wrap {overflow:hidden; display:inline-block; margin:6px auto 0}
+.tbl_list.range thead .rngbtn_wrap:after {content:''; clear:both; display:block}
+.tbl_list.range thead .btn_range {display:block; float:left; width:18px; height:17px; border:1px solid #ccc; background:#fff url('../images/btn/btn_table_range.gif') no-repeat 5px 6px}
+.tbl_list.range thead .btn_range:first-child {border-right:none}
+.tbl_list.range thead .btn_range.dw {background-position:5px -32px}
+.tbl_list.range tbody tr td {font-size:18px; color:#000; line-height:22px}
+
+/* 이용약관 > 이전버전 상세 내용 팝업 */
+.ico_magnifies { background:url('../images/ico/ico_magnifies.png') no-repeat left center;}
+.ico_magnifies > span { padding-left:30px; }
+
+/* 부가서비스변경 >  국제전화수신차단, 지정번호 필터링, 유모비 부가서비스 해지, 발신자미표시번호차단 서비스 설정 팝업 */
+.radio_wrap_right01 {display: inline-block; padding-left: 39px;}
+.msg_errorBox {paddng: 25px 0 0 0; font-size: 17px; line-height: 18px; color: #ff6170; text-align: center;}
+.pop_wrap .alert_box.new_alert_box {margin-top: 20px;}
+.pop_wrap .alert_box.new_alert_box02 {margin-top: 20px;}
+.setting_ul {}
+.setting_ul li {padding-top: 15px;}
+.setting_ul li:first-child {padding-top: 0px;}
+
+/* 팝업 닫기 버튼 */
+.btn_popup_close {position: absolute; right: 40px; top: 29px;}
+/* x auto 0} */
+.tbl_list.range thead .rngbtn_wrap:after {content:''; clear:both; display:block}
+.tbl_list.range thead .btn_range {display:block; float:left; width:18px; height:17px; border:1px solid #ccc; background:#fff url('../images/btn/btn_table_range.gif') no-repeat 5px 6px}
+.tbl_list.range thead .btn_range:first-child {border-right:none}
+.tbl_list.range thead .btn_range.dw {background-position:5px -32px}
+.tbl_list.range tbody tr td {font-size:18px; color:#000; line-height:22px}
+
+/* 이용약관 > 이전버전 상세 내용 팝업 */
+.ico_magnifies { background:url('../images/ico/ico_magnifies.png') no-repeat left center;}
+.ico_magnifies > span { padding-left:30px; }
+
+/* 부가서비스변경 >  국제전화수신차단, 지정번호 필터링, 유모비 부가서비스 해지, 발신자미표시번호차단 서비스 설정 팝업 */
+.radio_wrap_right01 {display: inline-block; padding-left: 39px;}
+.msg_errorBox {paddng: 25px 0 0 0; font-size: 17px; line-height: 18px; color: #ff6170; text-align: center;}
+.pop_wrap .alert_box.new_alert_box {margin-top: 20px;}
+.pop_wrap .alert_box.new_alert_box02 {margin-top: 20px;}
+.setting_ul {}
+.setting_ul li {padding-top: 15px;}
+.setting_ul li:first-child {padding-top: 0px;}
+
+/* 팝업 닫기 버튼 */
+.btn_popup_close {position: absolute; right: 40px; top: 29px;}
+
+/* 메인 팝업 */
+.pop_wrap.pop_main {min-width:580px}
+.pop_wrap.pop_main .pop_cont {width:580px; padding:0}
+.pop_foot {padding:12px 19px; text-align:right; background:#000}
+.pop_main .pop_foot .today {display:inline-block; color:#777}
+.pop_main .pop_foot .close {display:inline-block; color:#777; margin-left:10px; padding-left:16px; background:url('../images/bu/bu_pop_main_close.gif') no-repeat 0 3px}
+
+/* [윤]170918 공지사항 팝업 수정 */
+.pop_foot.gray{background:#ccc;}
+
+/*[윤] 171128 재약정 팝업 수정 */
+.reagree_info {margin:-20px 0 40px;}
+
+/*[윤] 180108 약정할인/의무약정제 가입신청서 스타일 추가 */
+.radio_list.agreement_sel + .tit_wrap{margin-top:40px;}
+.radio_list.agreement_sel + .tit_wrap{position:relative;}
+.radio_list.agreement_sel + .tit_wrap .select_wrap{position:absolute; top:-14px; right:0;}
+
+/* 휴대폰 분실/ 파손 보험 */
+.pop_wrap .cnt_tit {margin-bottom:15px;font-size:40px;font-family:'NotoSansThin';}
+.pop_wrap .join_box {margin:30px 0 60px 0;padding-top:60px;border-top:1px solid #ccc;}
+.pop_wrap .txt_dot {position:relative;padding-left:18px;}
+.pop_wrap .txt_dot:before {content:'';position:absolute;left:0;top:10px;width:6px;height:6px;background:#000;}
+.pop_wrap .guid_box {margin-top:30px;}
+.pop_wrap .guid_box .guid_inner {margin-top:50px;}
+.pop_wrap .guid_box .guid_inner:first-child {margin-top:0;}
+.pop_wrap .guid_box .sub_inner {margin-top:20px;}
+.pop_wrap .guid_box .tit {display:block;font-size:18px;}
+.pop_wrap .guid_box .dot_list01 {margin-top:20px;}
+.pop_wrap .guid_box .tit + .tit  {display:block;margin-top:20px;}
+
+.list_box {margin-top:60px;}
+.list_box .nun_list01 li:before {background:none;}
+
+/* dot : none */
+.dot_none li {padding-left:0 !important;}
+.dot_none li:before {display:none !important;}
+
+
+/* 요금제 변경 */
+.user_notify {padding-top:180px;}
+.user_notify.excltin_mrk {background:url('../../../common/error.html') no-repeat 50% 20px;}
+.user_notify.circle_chk {background:url('../../../common/error.html') no-repeat 50% 20px;}
+.user_notify .msg {line-height:40px;text-align:center;font-size:30px;letter-spacing:-0.1em;}
+.user_notify .sm_msg {display:block;margin-top:15px;line-height:24px;color:#ff626f;font-size:18px;}
+.user_notify .customer_inquiry {height:160px;margin-top:25px;border:1px solid #ebebeb;background:#fcfcfc;text-align:center;}
+.user_notify .customer_inquiry .tite {display:block;margin-top:40px;font-size:20px;}
+.user_notify .customer_inquiry .txt_inquiry {margin-top:15px;font-size:20px;color:#ff626f;}
+.user_notify .customer_inquiry .txt_tim {margin-top:8px;font-size:16px;color:#666;}
+
+.mark_txt {padding-left:15px;line-height:1.5;text-indent:-15px;color:#ff626f;font-size:16px;}
+.dc_price {display:inline-block;margin-left:10px;color:#ff626f !important}
