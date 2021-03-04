@@ -8,7 +8,7 @@
         
        
 
-<!-- 에러 페이지 -->
+<!-- IE -> 엣지 페이지 -->
 
         
        
@@ -70,26 +70,24 @@
 
         
 
-        <script>var err = request.getParameter('err');</script>
+        <script>var path = request.getParameter('path');</script>
 
 
 
 
 
         <script>
-            if (err == '' || err == null || err == undefined) { var err = 'index'; }
+            if (path == '' || path == null || path == undefined) { var path = '/'; }
         </script>
 
-
+        
         <script>
-            if (window.navigator.userAgent.match(/MSIE|Internet Explorer|Trident/i)) {
-                // IE!!
-                document.write('<iframe src="error/' + err + '.html"></iframe>');
-            } else if (err == 'notsupported') {
-                window.location.replace('/');
-            } else {
-                document.write('<iframe src="error/' + err + '.html"></iframe>');
-            }
+        if (window.navigator.userAgent.match(/MSIE|Internet Explorer|Trident/i)) {
+            // IE!!
+            window.location = "microsoft-edge:" + window.location.href;
+        } else {
+            window.location.replace(path);
+        }
         </script>
     </body>
 </html>
