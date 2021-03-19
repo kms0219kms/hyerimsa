@@ -201,6 +201,22 @@
         font-size: 20px;
         padding-bottom: 30px;
     }
+    .mobile { display: none; }
+    .pc { display: block; }
+    .small-device { display: none; color: #FFF;}
+
+    @media (max-width: 550px) {
+        .mobile { display: block !important }
+        .pc { display: none !important }
+        .small-device { display: none !important }
+    }
+    
+    @media (max-width: 319px) {
+        .mobile { display: none !important }
+        .pc { display: none !important }
+        .App { display: none !important }
+        .small-device { display: block !important }
+    }
 
     .Link,
     .Link:hover {
