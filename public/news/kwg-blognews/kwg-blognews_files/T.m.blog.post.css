@@ -1,0 +1,5 @@
+@charset "utf-8";
+
+.btn_less::before, .btn_more::before {
+    content: '';
+}

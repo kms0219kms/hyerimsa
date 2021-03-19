@@ -1,0 +1,139 @@
+
+body{-webkit-font-smoothing:antialiased}/* BLOG-902 추가 */
+
+.ico_comm_v1{display:inline-block;background:url(https://t1.daumcdn.net/tistory_admin/static/daumblog/m320/ico_comm_v1.png) no-repeat;font-size:0;line-height:0}
+
+.by_blog .txt_by{height:14px;}
+.blog_tit{position:relative;height:256px;padding:80px 43px 0;box-sizing:border-box}
+.side_scroll.tistory_gnb .gnb_head{border-bottom:none}
+
+/* blod header */
+.t_daum{position:absolute;top:0;height:26px;padding:12px 12px}
+.t_daum:after{display:block;overflow:hidden;clear:both;width:0;height:0;font-size:0;line-height:0}
+.kakao_head {height:48px;border-bottom:1px solid #ebebeb;}
+.kakao_head #kakaoServiceLogo{float:left;width:28px;height:28px;margin:0;padding:0;font-size:0}
+.tit_service{float:left;margin:-2px 0 0 7px;font-weight:normal;font-size:20px;color:#000}
+.k_head .ico_logo{display:block;width:24px;height:24px;background-position:0 0}
+.kakao_head .btn_rnb{height:24px;padding:12px 6px 12px 10px}/* BLOG-902 추가 */
+.rnb_wrap .ico_comm_v1{width:24px;height:24px;vertical-align:top}
+.kakao_head .btn_login .ico_comm_v1{overflow:hidden;width:24px;height:24px;background-position:3px -28px;}
+.kakao_head .btn_logout .thumb_profile{width:24px;height:24px;border-radius:50%}
+.kakao_head .btn_logout .ico_comm_v1{border-radius:50%;border:1px solid rgba(0,0,0,0.08);background:url(https://t1.daumcdn.net/tistory_admin/static/daumblog/m320/ico_thum.png) no-repeat}
+.kakao_head .btn_homeLink .thumb_profile{width:24px;height:24px;border-radius:50%}
+.kakao_head .btn_homeLink .ico_comm_v1{border-radius:50%;border:1px solid rgba(0,0,0,0.08);background:url(https://t1.daumcdn.net/tistory_admin/static/daumblog/m320/ico_thum.png) no-repeat}
+.kakao_head .btn_search .ico_comm_v1{background-position:-30px 0}
+.kakao_head .btn_nav .ico_comm_v1{background-position:-60px 0}
+.b_scroll .link_daumblog{position:fixed;top:12px;left:12px;background-position:0 0}
+.b_scroll .link_daumblog .ico_comm_v1{background-position:0 0}
+
+/* blog content theme */
+.list_tistorybnr .link_bnr{position:relative}
+.list_tistorybnr .layer_theme{display:block;position:absolute;top:0;bottom:0;left:0;right:0;background:#333;opacity:0.4}
+.tit_category{height:80px;position:absolute;top:50%;left:10px;right:10px;z-index:3;display:block;margin-top:-40px;text-align:center}
+.tit_category .txt_category{display:inline-block;position:relative}
+.tit_category .txt_category:before{display:inline-block;position:absolute;bottom:2px;z-index:0;width:100%;height:4px;background:#1a9be4;content:''}
+.tit_category .em_category{display:inline-block;position:relative;z-index:1;font-size:13px;color:#fff}
+.tit_category .tit_blogsbj{margin-top:7px;overflow: hidden;text-overflow: ellipsis;display:-webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;word-wrap:break-word;line-height:24px;font-weight:normal;font-size:20px;color:#fff}
+
+/* blog tab */
+.blog_tab{overflow:hidden;position:relative;border-bottom:1px solid #ecf0f5;background-color:#fff}
+.tab_blog{position:relative;min-width:400px;padding:0 8px 0 58px}
+.tab_blog:after{display:block;visibility:hidden;height:0;font-size:0;clear:both;content:''}
+.blog_tab li{float:left;width:auto;min-width:40px}
+.blog_tab li:first-child{position:absolute;left:8px;top:0;width:48px;}
+.blog_tab .link_tab{display:block;position:relative;width:auto;height:29px;padding:10px 12px 0;margin:0 auto;font-size:14px;color:#333;text-align:center}
+.blog_tab .txt_menu{display:inline-block;position:relative}
+.blog_tab .txt_inmenu{position:relative;z-index:1;letter-spacing:-0.5px;}/* 2019-09-25 수정 */
+.blog_tab .on .link_tab{width:auto;font-weight:bold}
+.blog_tab .on .txt_menu:before{display:inline-block;position:absolute;left:0;bottom:3px;z-index:0;width:100%;height:3px;background:#1a9be4;content:''}
+
+/* blog list */
+.list_post .data_info .txt_menu{overflow:hidden;position:relative;float:left;max-width:20%;font-size:12px;line-height:21px;color:#1a9be4;white-space:nowrap;text-overflow:ellipsis}
+.list_post .data_info .txt_menu:after{display:inline-block;width:2px;height:2px;border-radius:2px;margin:9px 6px 0 6px;background-color:#9199a4;vertical-align:top;content:''}
+.list_post .data_info .txt_category{max-width:20%;color:#909090}
+.list_post .data_info .txt_date{line-height:21px;color:#909090}
+
+/* link more */
+.link_postmore{width:160px;height:40px;margin:24px auto 0 auto;border:1px solid #ebebeb;line-height:41px; font-size:14px;font-weight:bold;color:#333}
+
+/* view */
+.blogview_tit .txt_category,
+.section_comment .num_comment{color:#1a9be4}
+.blogview_content .list_tag .link_tag{height:25px;border-radius:0;border-color:rgba(185,185,185,.5);line-height:24px;color:#707070}
+.by_blog .txt_by,
+.blogview_info .txt_date,
+.sympathy_wrap .info_sym{color:#909090}
+.by_blog .txt_by:before{color:#ccc}
+.by_blog .txt_by:after{color:#ccc}
+.blogview_head .tit_blogview{padding:0 137px 0 47px}
+
+/* comment */
+.list_cmt .info_append .link_author,
+.list_cmt .info_append .txt_date{color:#909090}
+.list_cmt .thumb_img{z-index:1;}
+.list_cmt li{position:relative;border-top:none}
+.box_chk .ico_chk{width:20px;height:20px;background-position:-25px -30px}
+.box_chk .inp_chk:checked + .lab_chk .ico_chk{background-position:-50px -30px}
+
+/* button */
+.btn_set{border-radius:0;background-color:#1a9be4}
+.btn_cancel{background-color:#fff}
+
+/* line */
+.h_line{height:5px;background:#f1f4f8}
+
+/* footer */
+.kakao_foot_top{height:80px;padding-top:16px;background:#f7f8f9;text-align:center}
+.kakao_foot_top .link_kakaocorp{color:rgba(0,0,0,0.4)}
+.list_foot{margin-bottom:12px;font-size:0;line-height:0}/* BLOG-902 추가 */
+.list_foot li{display:inline-block;margin-left:4px}
+.list_foot li:first-child{margin-left:0}
+.list_foot .btn_foot{display:inline-block;min-width:64px;height:30px;border:1px solid #ebebeb;background:#fff;line-height:32px;font-size:12px;color:#333;text-align:center}
+
+/* 사이드바 */
+.kakao_head .btn_gnb .ico_close{width:14px;height:14px;background-position:-90px -12px}
+.tistory_gnb{padding:50px 0 65px;background-color:#fff;-webkit-ransition:none;transition:none}/* TIP-10363 수정 */
+.tistory_gnb .gnb_head{background-color:#fff}
+.tistory_gnb .link_tistory{display:none}
+.gnb_open .tistory_gnb .btn_gnb{width:30px;height:30px;top:17px;left:auto;right:17px;padding:7px 0 0 7px;box-sizing:border-box}
+.gnb_open .tistory_gnb .btn_gnb .ico_fold{display:none}
+.wrap_menu{padding:0 46px 0 43px}
+.wrap_menu .tit_menu .img_comm{display:none}
+.wrap_menu .link_sub .ico_arr{display:none}
+.wrap_menu .blog_menu{margin:23px 0 0;padding:15px 0 0;border:none;border-top:1px solid #333}
+.wrap_menu .blog_menu .cate_menu:first-child{margin-top:12px}
+.wrap_menu .blog_menu .link_menu{font-weight:bold}
+.wrap_menu .blog_menu .num_story{font-size:14px;line-height:12px;color:#333;font-weight:normal}
+.wrap_menu .list_story li{margin-top:21px}
+.wrap_menu .list_story li:first-child{margin-top:20px}
+.wrap_menu .list_story .link_story{font-size:16px;line-height:19px;color:#333;font-weight:normal}
+.wrap_menu .blog_menu .on{color:#333}
+.wrap_menu .blog_menu .on.link_sub{color:#1a9be4}
+.wrap_menu .story_sub .cate_sub{margin-top:23px;}
+.wrap_menu .story_sub .cate_sub .link_sub{line-height:17px}
+.wrap_menu .story_sub .link_sub{font-size:15px;color:#777}
+.wrap_menu .story_sub .num_story{color:#777}
+.wrap_menu .story_sub .on .num_story{color:#1a9be4}
+.wrap_menu .story_sub{margin:22px 0 22px 12px;padding-left:14px;border-left:2px solid #EAEAEA;line-height:15px}
+.wrap_menu .btn_profile{display:inline-block;width:70px;height:22px;padding:8px 0 0;margin:13px 0 0;border-radius:32px;border:1px solid rgba(0,0,0,.1);font-size:13px;line-height:15px;text-align:center}
+.wrap_menu .box_profile{display:flex;position:relative;-webkit-box-pack:justify;justify-content:space-between}
+.wrap_menu .link_profile .inner_profile{word-break:break-word}
+
+/* 에러페이지 */
+.blog_restric{display:table;position:fixed;top:0;padding:0;bottom:0;height:100%}
+.blog_restric .inner_blog_restic{display:table-cell;vertical-align:middle}
+.blog_restric .tit_restic{font-size:20px;line-height:24px;color:#333;font-weight:bold;text-align:center}
+.blog_restric .txt_restric{padding:16px 40px 0;font-size:14px;line-height:20px;color:#909090;word-break:keep-all;word-wrap:break-word}
+
+/* 검색입력필드 공통 */
+.form_search .box_search{background-color:#1a9be4}/* TIP-10363 추가 */
+.form_search .box_search .tf_search{background-color:#1a9be4}
+
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),only screen and (min-device-pixel-ratio:1.5),only screen and (min-resolution:1.5dppx){
+    .ico_comm_v1{background:url(https://t1.daumcdn.net/tistory_admin/static/daumblog/m640/ico_comm_v1.png) no-repeat;-webkit-background-size:70px 20px;background-size:150px 50px}
+    .kakao_head .btn_logout .ico_comm_v1{background:url(https://t1.daumcdn.net/tistory_admin/static/daumblog/m640/ico_thum.png) no-repeat;-webkit-background-size:25px 25px;background-size:25px 25px}
+}
+
+.txc-footnote-box {
+    display: none;
+}
