@@ -1,5 +1,7 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.css');
 
+    * {touch-action: pan-y;}
+
     .discord.button {
         background-color: #748add !important;
         color: white !important;
@@ -52,7 +54,8 @@
         width: 100%;
         margin: 0;
         padding-top: 50px;
-        padding-bottom: 50px;
+        /* padding-bottom: 50px; */
+        padding-bottom: 30px;
         background: #1b1e21;
     }
 
@@ -174,6 +177,17 @@
         color: white;
     }
 
+    .index-medium {
+        padding-top: 160px;
+        padding-bottom: 160px;
+        text-align: center;
+        background-image: url(../../img/background.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        color: white;
+    }
+
     .index-topic {
         display: block;
         font-family: Noto_Sans_KR-Bold;
@@ -200,6 +214,8 @@
 
     .index-button {
         padding: 10px 30px 10px 30px;
+        margin: 10px 10px 10px 10px;
+        white-space:pre;
         background: white;
         color: black;
         border-radius: 15px;

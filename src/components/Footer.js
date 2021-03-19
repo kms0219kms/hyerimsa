@@ -7,10 +7,10 @@ const Footer = () => {
                 <div className="container">
                     <div className="footer-grid">
                         <div className="footer-desc">
-                            <h4 className="footer-topic">
-                                혜림사
-                            </h4>
-                            Copyright 2021 HYERIMSA, All rights reserved.
+                            <span className="footer-topic">
+                                <h4>혜림사</h4>&copy; 2021 HYERIMSA, All rights reserved.
+                            </span>
+                            
                         </div>
                         <div className="footer-desc">
                             <span className="footer-box">
