@@ -2,11 +2,8 @@
 import React from 'react';
 
 const About = () => {
-    var addactive = () => {
-        document.getElementById('about').classList.add('active');
-    }
     return (
-        <div onLoad={addactive}>
+        <div>
             <div className="index-small bg-3">
                 <div className="jumbotron">
                     <center style={{margin: '0'}}>

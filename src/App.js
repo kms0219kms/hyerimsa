@@ -4,6 +4,7 @@ import { Home, About, Donate, Band, React_main } from './pages';
 import { Navbar, Footer, NotFound } from './components';
 
 function App() {
+
   return (
     <div>
       <div className="small-device">

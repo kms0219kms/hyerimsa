@@ -1,5 +1,14 @@
 <!DOCTYPE html>
 <html lang="ko">
+    <script>
+    function recode(name, data) {
+      console.log(`Received ` + data + ` value from ` + name + `.`);
+      return data;
+    }
+    function getRandomImageName(){
+      return 'IMG_000' + Math.floor(1 + Math.random() * 5);
+    }
+  </script>
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
@@ -23,6 +32,7 @@
     <link rel="stylesheet" href="/static/assets/css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="/static/assets/css/font.css">
     <link rel="stylesheet" href="/static/assets/css/custom/App.css">
+    <script>document.write('<link rel="stylesheet" href="/static/assets/img/random-background/' + recode("RandomImage", getRandomImageName()) + '.css">')</script>
     <script src="/static/assets/js/jquery-3.5.1.min.js"></script>
     <script src="/static/assets/js/popper.js"></script>
     <script src="/static/assets/js/bootstrap/bootstrap.min.js"></script>
@@ -31,6 +41,7 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <!-- <button onClick="recode('RandomImage', getRandomImageName());">랜덤 배경 return 표시</button> -->
     <div id="root"></div>
     <!--
       This HTML file is a template.
